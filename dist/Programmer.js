@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -11,6 +12,8 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+exports.__esModule = true;
+var NewPerson_1 = require("./NewPerson");
 var Programmer = /** @class */ (function (_super) {
     __extends(Programmer, _super);
     function Programmer(init) {
@@ -19,7 +22,8 @@ var Programmer = /** @class */ (function (_super) {
         return _this;
     }
     return Programmer;
-}(NewPerson));
+}(NewPerson_1["default"]));
+exports["default"] = Programmer;
 var obje = {
     name: "hoge",
     age: 90,
@@ -30,4 +34,4 @@ var obje = {
     ]
 };
 var hoge = new Programmer(obje);
-console.log(hoge);
+console.log(hoge.skills[0].lang);
