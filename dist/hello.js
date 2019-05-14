@@ -1,3 +1,2 @@
-const msg = 'Hello! TypeScript!';
+var msg = 'Hello! TypeScript!';
 console.log(msg);
-//# sourceMappingURL=hello.js.map
