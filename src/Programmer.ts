@@ -1,4 +1,5 @@
-class Programmer extends NewPerson {
+import NewPerson from "./NewPerson";
+export default class Programmer extends NewPerson {
   salary: number;
   skills: Array<{ lang: string, rate: number }>;
 
@@ -20,4 +21,4 @@ const obje = {
 
 const hoge = new Programmer(obje);
 
-console.log(hoge)
+console.log(hoge.skills[0].lang) // javascript

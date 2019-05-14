@@ -1,4 +1,4 @@
-class NewPerson {
+export default class NewPerson {
   name?: string;
   age?: number;
 
