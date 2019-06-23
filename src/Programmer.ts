@@ -17,5 +17,4 @@ const obje = {
 }
 
 const hoge = new Programmer(obje)
-
 console.log(hoge.skills[0].lang) // javascript
